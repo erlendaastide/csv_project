@@ -21,6 +21,8 @@ extension = 'csv'
 
 all_input_filenames = [i for i in glob.glob(f'{prefix}*.{extension}')]
 
+print('Lenght: ',len(all_input_filenames))
+
 # input_file: file path / name of the input csv file, it will read the contents of this csv file
 # output_file: file path / name of the output csv file, it will write modified contents in this csv file
 # transform_row: A callback function, that receives a list and modifies that list
